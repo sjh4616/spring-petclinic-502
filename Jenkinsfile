@@ -22,6 +22,10 @@ pipeline {
       }
     }
 
+    // Docker Images 생성
+
+    // Docker Image Push
+
     // SSH를 이용한 파일 전송 및 실행
     stage('SSH Publish') {
       steps {
@@ -46,6 +50,8 @@ pipeline {
         verbose: false)])
       }
     }
+
+    // Docker Image 삭제
 
     
   }
